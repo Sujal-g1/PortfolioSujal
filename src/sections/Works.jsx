@@ -13,7 +13,7 @@ const Works = () => {
     const moveX = useRef(null)
     const moveY = useRef(null)
     const mouse = useRef({ x:0,y:0})
-    const overlayRefs = useRef([])
+    const overlayRefs = useRef([])  
 
     const text = `Featured projects that have been meticulously
     crafted with passion to drive
