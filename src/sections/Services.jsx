@@ -55,6 +55,7 @@ const Services = () => {
         <span className="mr-12 text-white/30 text-lg">0{itemIdx+1}</span>
         {item.title}
         </h3>
+        {/* <p className="ml-16 mt-2 text-base lg:text-lg text-white/50"> {item.description} </p> */}
         {itemIdx < service.items.length -1 && (
         <div className="w-full h-px my-2 bg-white/30" /> )}
         </div>

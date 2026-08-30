@@ -116,6 +116,7 @@ const Navbar = () => {
              ref={contactRef}
              className="flex flex-col flex-wrap justify-between gap-8 md:flex-row"
            >
+            {/* mail */}
              <div className="font-light">
                <p className="tracking-wider text-white/50">E-mail</p>
                <a className="text-xl tracking-widest lowercase text-pretty"
@@ -123,6 +124,7 @@ const Navbar = () => {
                  sujal.work2005@gmail.com
                </a>
              </div>
+             {/* social media */}
              <div className="font-light">
                <p className="tracking-wider text-white/50">Social Media</p>
                <div className="flex flex-col flex-wrap md:flex-row gap-x-2">
@@ -139,6 +141,38 @@ const Navbar = () => {
                  ))}
                </div>
              </div>
+
+             {/* resume */}
+              <a
+                href="/resume.pdf"
+                download="Sujal-Garg-Resume.pdf"
+                className="
+                  inline-flex
+                  items-center
+                  justify-center
+                  text-sm
+                  gap-3
+                  px-4
+                  py-3
+                  mt-2
+                  tracking-widest
+                  text-black
+                  transition-all
+                  duration-300
+                  bg-white
+                  border
+                  border-transparent
+                  rounded-full
+                  hover:bg-black
+                  hover:scale-102
+                  hover:text-white
+                  hover:border-white
+                "
+              >
+                Download Resume
+                <span className="text-lg">↓</span>
+              </a>
+             
            </div>
          </nav>
 

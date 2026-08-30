@@ -11,13 +11,16 @@ const About = () => {
     I build scalable, high-performance solutions 
     from prototype to production.`
 
-      const aboutText = `Obsessed with building fast, intuitive apps—from pixel-perfect React UIs to bulletproof serverless backends. Every line of code is a promise: quality that users feel.
-        When I’m not shipping:
-        ⚡️ Open-sourcing my latest experiment (or hacking on yours)
-        🎥 Teaching devs on Twitch/YouTube—because rising tides lift all ships
-        🧗 Rock climbing (problem-solving with real stakes)
-        🎸 Strumming chords while CI pipelines pass (multitasking at its finest)`;
+     const aboutText = `I’m a Full-Stack Software Engineer who enjoys turning ideas into practical, reliable web applications. I work across the stack—from building polished React interfaces to designing APIs, databases, authentication systems, and real-time features.
 
+I’m particularly interested in applications that solve real problems, whether that means building privacy-focused communication with real-time chat and WebRTC, integrating AI into healthcare workflows, or creating connected mobility experiences with live tracking and smart features.
+
+When I’m not building:
+⚡️ Experimenting with new technologies and ideas
+🧠 Exploring AI, system design, and better ways to build software
+💻 Working on side projects that challenge my engineering skills
+🎨 Refining interfaces and interactions until they feel right
+🚀 Learning, building, breaking things, and building them better`;
     useGSAP(()=>{
         gsap.to("#about",{
             scale: 0.95,
@@ -56,7 +59,7 @@ const About = () => {
         <div className="flex flex-col items-center justify-between gap-16 px-10 pb-16 text-xl md:text-2xl lg:text-3xl font-light tracking-wide lg:flex-row text-white/60">
         <img 
         ref={imgRef}
-        src="images/man.jpg" alt="sujal" 
+        src="images/img.png" alt="sujal" 
         className="w-md rounded-3xl"/>
         <AnimatedTextLines 
         text={aboutText}

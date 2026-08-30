@@ -1,175 +1,298 @@
 // index.js
 export const servicesData = [
-  {
-    title: "FullStack Development",
-    description:
-      "Your business deserves a fast, secure, and future-proof digital foundation. I develop custom web apps with clean architecture, optimized databases, and seamless integrations—ensuring reliability at every layer.",
-    items: [
-      {
-        title: "Backend Engineering",
-        description: "(REST/GraphQL APIs, Microservices, Auth Systems)",
-      },
-      {
-        title: "Frontend Excellence",
-        description: "(React, Vue, TypeScript, Interactive UI/UX)",
-      },
-      {
-        title: "Database Design",
-        description: "(SQL/NoSQL Optimization, Scalable Structures)",
-      },
-    ],
-  },
-  {
-    title: "DevOps & Cloud Solutions",
-    description:
-      "Deploying software shouldn't be a gamble. I automate infrastructure, enforce security, and leverage cloud platforms (AWS/Azure) to keep your app running smoothly—24/7, at any scale.",
-    items: [
-      {
-        title: "CI/CD Pipelines",
-        description: "(GitHub Actions, Docker, Kubernetes)",
-      },
-      {
-        title: "Server Management ",
-        description: "(Linux, Nginx, Load Balancing)",
-      },
-      {
-        title: "Performance Tuning",
-        description: "(Caching, Compression, Lighthouse 90+ Scores)",
-      },
-    ],
-  },
-  {
-    title: "Security & Optimization",
-    description:
-      "Slow or hacked apps destroy trust. I harden security (XSS/SQLI protection, OAuth) and optimize bottlenecks so your app stays fast, safe, and scalable as you grow.",
-    items: [
-      {
-        title: "Code Audits",
-        description: "(Refactoring, Tech Debt Cleanup)",
-      },
-      {
-        title: "Pen Testing",
-        description: "(Vulnerability Assessments)",
-      },
-      {
-        title: "SEO Tech Stack",
-        description: "(SSR, Metadata, Structured Data)",
-      },
-    ],
-  },
-  {
-    title: "Web & Mobile Apps",
-    description:
-      "A clunky interface can sink even the best ideas. I craft responsive, pixel perfect web and mobile apps (React Native/Flutter) that users love—bridging design and functionality seamlessly.",
-    items: [
-      {
-        title: "Cross-Platform Apps",
-        description: "(Single codebase for iOS/Android/Web)",
-      },
-      {
-        title: "PWAs",
-        description: "(Offline mode, Push Notifications)",
-      },
-      {
-        title: "E-Commerce",
-        description: "(Checkout flows, Payment Gateways, Inventory APIs)",
-      },
-    ],
-  },
+{
+  title: "Full-Stack Development",
+
+  description:
+    "I build end-to-end web applications with modern frontend architecture, scalable backend systems, and reliable data layers—turning complex requirements into production-ready digital products.",
+
+  items: [
+    {
+      title: "Frontend Engineering",
+      description: "(React, Next.js, TypeScript, Tailwind CSS, Interactive UI/UX)",
+    },
+
+    {
+      title: "Backend & APIs",
+      description: "(Node.js, Express.js, REST APIs, JWT, WebSockets)",
+    },
+
+    {
+      title: "Data & Infrastructure",
+      description: "(MongoDB, PostgreSQL, MySQL, Redis, Docker, Cloud Deployment)",
+    },
+  ],
+},
+{
+  title: "Modern Web Engineering",
+
+  description:
+    "I engineer modern web experiences that combine responsive interfaces, real-time functionality, secure APIs, and scalable data systems to deliver fast and reliable applications.",
+
+  items: [
+    {
+      title: "Modern Frontend",
+      description: "(React, Next.js, TypeScript, Zustand, Tailwind CSS, GSAP)",
+    },
+
+    {
+      title: "Real-Time Systems",
+      description: "(WebSockets, Socket.IO, WebRTC, Live Tracking, Real-Time Communication)",
+    },
+
+    {
+      title: "Secure Architecture",
+      description: "(JWT Authentication, Firebase, REST APIs, End-to-End Encryption)",
+    },
+  ],
+},
+{
+  title: "Product Engineering",
+
+  description:
+    "I transform ideas into functional digital products—from intuitive interfaces to backend architecture, real-time features, authentication, and deployment—with a focus on usability and reliability.",
+
+  items: [
+    {
+      title: "Product Interfaces",
+      description: "(React, Next.js, Tailwind CSS, Material UI, Framer Motion)",
+    },
+
+    {
+      title: "Application Architecture",
+      description: "(Node.js, Express.js, REST APIs, MongoDB, PostgreSQL)",
+    },
+
+    {
+      title: "Real-World Features",
+      description: "(Payments & Wallets, Maps, QR/NFC, Notifications, Real-Time Systems)",
+    },
+  ],
+},
+{
+  title: "AI-Powered Development",
+
+  description:
+    "I combine full-stack engineering with modern AI capabilities to build intelligent applications that turn complex workflows into accessible, practical, and user-focused experiences.",
+
+  items: [
+    {
+      title: "AI Integration",
+      description: "(Generative AI, LLM Integration, Google Gemini API, Prompt Engineering)",
+    },
+
+    {
+      title: "Full-Stack Systems",
+      description: "(React, Node.js, Express.js, MongoDB, REST APIs, Firebase)",
+    },
+
+    {
+      title: "Intelligent Experiences",
+      description: "(Voice Assistance, Multilingual Interfaces, Contextual AI Features)",
+    },
+  ],
+},
+{
+  title: "Scalable Application Development",
+
+  description:
+    "I design and develop reliable applications with clean architecture, secure authentication, real-time communication, optimized data management, and scalable technology choices.",
+
+  items: [
+    {
+      title: "Scalable Backend",
+      description: "(Node.js, Express.js, REST APIs, WebSockets, Microservice-Ready Architecture)",
+    },
+
+    {
+      title: "Data Engineering",
+      description: "(MongoDB, MySQL, PostgreSQL, Redis, Structured Data Models)",
+    },
+
+    {
+      title: "Security & Reliability",
+      description: "(JWT, Firebase Authentication, WebRTC, End-to-End Encryption, Docker)",
+    },
+  ],
+},
 ];
+
 export const projects = [
   {
     id: 1,
-    name: "Mobile Accessories E-commerce",
+    name: "Zingleee",
     description:
-      "An online store specializing in phone accessories including cases, chargers, cables, and power banks with MagSafe compatibility.",
-    href: "",
-    image: "/assets/projects/mobile-accessories-store.jpg",
+      "A privacy-first communication platform with secure real-time messaging, voice and video calls, and community discussions without requiring phone numbers.",
+
+    href: "https://zingleee.vercel.app",
+
+    image: "/assets/projects/zingleee.png",
+
     bgImage: "/assets/backgrounds/blanket.jpg",
+
     frameworks: [
-      { id: 1, name: "React" },
-      { id: 2, name: "Next.js" },
-      { id: 3, name: "Node.js" },
-      { id: 4, name: "MongoDB" },
-      { id: 5, name: "Tailwind CSS" },
-    ],
-  },
-  {
-    id: 2,
-    name: "Plant Shop E-commerce",
-    description:
-      "An online store specializing in rare and decorative plants with a clean, user-friendly interface.",
-    href: "",
-    image: "/assets/projects/plant-shop.jpg",
-    bgImage: "/assets/backgrounds/curtains.jpg",
-    frameworks: [
-      { id: 1, name: "React" },
-      { id: 2, name: "Next.js" },
-      { id: 3, name: "Stripe API" },
-      { id: 4, name: "Tailwind CSS" },
-    ],
-  },
-  {
-    id: 3,
-    name: "Apple Tech Marketplace",
-    description:
-      "An e-commerce platform for Apple products and accessories with deals and category filtering.",
-    href: "",
-    image: "/assets/projects/apple-tech-store.jpg",
-    bgImage: "/assets/backgrounds/map.jpg",
-    frameworks: [
-      { id: 1, name: "Blazor" },
-      { id: 2, name: "ASP.NET Core" },
-      { id: 3, name: "SQL Server" },
-      { id: 4, name: "Bootstrap" },
-    ],
-  },
-  {
-    id: 4,
-    name: "Electronics & Gadgets Store",
-    description:
-      "A multi-category online shop featuring electronics, home appliances, and gaming gear with special offers.",
-    href: "",
-    image: "/assets/projects/electronics-store.jpg",
-    bgImage: "/assets/backgrounds/poster.jpg",
-    frameworks: [
-      { id: 1, name: "Vue.js" },
-      { id: 2, name: "Laravel" },
-      { id: 3, name: "MySQL" },
-      { id: 4, name: "SCSS" },
-    ],
-  },
-  {
-    id: 5,
-    name: "Home Decor Marketplace",
-    description:
-      "A curated collection of designer home decor items, including furniture and artisan vases.",
-    href: "",
-    image: "/assets/projects/home-decor-store.jpg",
-    bgImage: "/assets/backgrounds/table.jpg",
-    frameworks: [
-      { id: 1, name: "Angular" },
-      { id: 2, name: "Firebase" },
-      { id: 3, name: "GraphQL" },
-      { id: 4, name: "Material UI" },
-    ],
-  },
-  {
-    id: 6,
-    name: "Digital Game Store",
-    description:
-      "A gaming platform featuring discounted titles, top sellers, and genre-based browsing.",
-    href: "",
-    image: "/assets/projects/game-store.jpg",
-    bgImage: "/assets/backgrounds/curtains.jpg",
-    frameworks: [
-      { id: 1, name: "Svelte" },
+      { id: 1, name: "React.js" },
       { id: 2, name: "Node.js" },
       { id: 3, name: "MongoDB" },
-      { id: 4, name: "Chakra UI" },
+      { id: 4, name: "Socket.IO" },
+      { id: 5, name: "WebRTC" },
+      { id: 6, name: "Tailwind CSS" },
+    ],
+  },
+
+  {
+    id: 2,
+    name: "JeevanVriksha",
+    description:
+      "A maternal and child healthcare platform designed for rural healthcare workers to manage patient records, vitals, vaccinations, medicines, and field visits with an AI-powered multilingual assistant.",
+
+    href: "https://jeevanvriksha.vercel.app/",
+
+    image: "/assets/projects/jeevan.png",
+
+    bgImage: "/assets/backgrounds/blanket.jpg",
+
+    frameworks: [
+      { id: 1, name: "React.js" },
+      { id: 2, name: "Node.js" },
+      { id: 3, name: "MongoDB" },
+      { id: 4, name: "Google Gemini" },
+      { id: 5, name: "i18next" },
+      { id: 6, name: "Tailwind CSS" },
+    ],
+  },
+
+  {
+    id: 3,
+    name: "Mobizee",
+    description:
+      "A smart mobility platform featuring real-time bus tracking, interactive maps, seat reservations, wallet integration, NFC ticketing, ride coordination, taxi booking, and live safety features.",
+
+    href: "https://syraxxmobizee-frontend.onrender.com/",
+
+    image: "/assets/projects/mobizee.png",
+
+    bgImage: "/assets/backgrounds/blanket.jpg",
+
+    frameworks: [
+      { id: 1, name: "React.js" },
+      { id: 2, name: "Node.js" },
+      { id: 3, name: "MongoDB" },
+      { id: 4, name: "Socket.IO" },
+      { id: 5, name: "Leaflet.js" },
+      { id: 6, name: "Tailwind CSS" },
+    ],
+  },
+
+  {
+  id: 4,
+  name: "Syraxx Ochi",
+  description:
+    "A creative agency website clone inspired by Ochi.design, recreating its bold visual identity, smooth animations, interactive layouts, and modern editorial-style user experience.",
+
+  href: "https://syraxxochi.vercel.app",
+
+  image: "/assets/projects/ochi.png",
+
+  bgImage: "/assets/backgrounds/blanket.jpg",
+
+  frameworks: [
+    { id: 1, name: "React.js" },
+    { id: 2, name: "Vite" },
+    { id: 3, name: "GSAP" },
+    { id: 4, name: "Framer Motion" },
+    { id: 5, name: "JavaScript" },
+    { id: 6, name: "CSS" },
+  ],
+},
+
+{
+  id: 5,
+  name: "SocialScheduler",
+  description:
+    "An AI-powered social media automation platform designed to simplify content creation, scheduling, and social media management through an intelligent and streamlined workflow.",
+
+  href: "https://github.com/Sujal-g1/SocialScheduler",
+
+  image: "/assets/projects/scheduler.png",
+
+  bgImage: "/assets/backgrounds/blanket.jpg",
+
+  frameworks: [
+    { id: 1, name: "React.js" },
+    { id: 2, name: "JavaScript" },
+    { id: 3, name: "AI / GenAI" },
+  ],
+},
+];
+
+export const skillGroups = [
+  {
+    number: "01",
+    title: "Languages",
+    skills: ["JavaScript", "TypeScript", "Java", "Python"],
+  },
+  {
+    number: "02",
+    title: "Frontend",
+    skills: [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Material UI",
+      "Zustand",
+      "GSAP",
+      "Framer Motion",
+    ],
+  },
+  {
+    number: "03",
+    title: "Backend",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "WebSockets",
+      "WebRTC",
+      "JWT",
+      "Firebase",
+    ],
+  },
+  {
+    number: "04",
+    title: "AI / GenAI",
+    skills: [
+      "Generative AI",
+      "LLM Integration",
+      "Prompt Engineering",
+    ],
+  },
+  {
+    number: "05",
+    title: "Databases",
+    skills: [
+      "MongoDB",
+      "PostgreSQL",
+      "MySQL",
+      "Redis",
+      "Prisma ORM"
+    ],
+  },
+  {
+    number: "06",
+    title: "Tools & Platforms",
+    skills: [
+      "Git",
+      "GitHub",
+      "Docker",
+      "Postman",
+      "Vercel",
+      "Render",
     ],
   },
 ];
+
+
 export const socials = [
 
   { name: "LinkedIn", href: "https://www.linkedin.com/in/sujalgarg20" },
