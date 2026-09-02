@@ -147,26 +147,23 @@ const Navbar = () => {
                 href="/resume.pdf"
                 download="Sujal-Garg-Resume.pdf"
                 className="
-                  inline-flex
-                  items-center
-                  justify-center
-                  text-sm
-                  gap-3
-                  px-4
-                  py-3
-                  mt-2
-                  tracking-widest
-                  text-black
-                  transition-all
-                  duration-300
-                  bg-white
-                  border
-                  border-transparent
-                  rounded-full
-                  hover:bg-black
-                  hover:scale-102
-                  hover:text-white
-                  hover:border-white
+                resume-btn
+                inline-flex
+                items-center
+                justify-center
+                text-sm
+                gap-3
+                px-4
+                py-3
+                mt-2
+                tracking-widest
+                border
+                border-transparent
+                rounded-full
+                transition-all
+                duration-300
+                hover:scale-102
+                hover:border-white
                 "
               >
                 Download Resume
@@ -202,3 +199,7 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+
+

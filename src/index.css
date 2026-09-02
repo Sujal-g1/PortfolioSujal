@@ -133,3 +133,41 @@ body {
 @utility contact-text-responsive {
   @apply text-[42px] sm:text-[52px] md:text-[62px] lg:text-[100px];
 }
+
+
+/* button css */
+@keyframes circle-swoop {
+  from {
+    clip-path: circle(0% at 100% 0%);
+  }
+
+  to {
+    clip-path: circle(150% at 100% 0%);
+  }
+}
+
+.resume-btn {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: white;
+  color: black;
+}
+
+.resume-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: black;
+  z-index: -1;
+
+  clip-path: circle(0% at 100% 0%);
+}
+
+.resume-btn:hover::before {
+  animation: circle-swoop 0.8s cubic-bezier(.25, 1, .30, 1) forwards;
+}
+
+.resume-btn:hover {
+  color: white;
+}

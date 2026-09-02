@@ -88,25 +88,22 @@ const Contact = () => {
                 href="/resume.pdf"
                 download="Sujal-Garg-Resume.pdf"
                 className="
+                  resume-btn
                   inline-flex
                   items-center
                   justify-center
+                  text-sm
                   gap-3
-                  px-5
+                  px-4
                   py-3
                   mt-2
-                  text-sm
                   tracking-widest
-                  text-black
-                  transition-all
-                  duration-300
-                  bg-white
                   border
                   border-transparent
                   rounded-full
-                  hover:bg-black
-                  hover:scale-105
-                  hover:text-white
+                  transition-all
+                  duration-300
+                  hover:scale-102
                   hover:border-white
                 "
               >
