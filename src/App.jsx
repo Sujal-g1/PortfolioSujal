@@ -1,3 +1,4 @@
+
 import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
 import ServiceSummary from './sections/ServiceSummary'
@@ -21,31 +22,54 @@ const App = () => {
       className="relative w-full min-h-screen overflow-x-hidden"
     >
 
-      {/* LOADER */}
+      {/* =========================================
+          LOADER
+          ========================================= */}
+
       {!isReady && (
-        <Loader onComplete={() => setIsReady(true)} />
+        <Loader
+          onComplete={() => setIsReady(true)}
+        />
       )}
 
-      {/* MAIN WEBSITE */}
-      <div
-        className={`
-          transition-opacity duration-1000
-          ${isReady ? 'opacity-100' : 'opacity-0'}
-        `}
-      >
-        <Navbar />
-        <Hero />
-        <ServiceSummary />
-        <Services />
-        <About />
-        <Skills />
-        <Works />
-        <ContactSummary />
-        <Contact />
-      </div>
+
+      {/* =========================================
+          MAIN WEBSITE
+
+          IMPORTANT:
+          Don't mount the website until the
+          loader has completed.
+          ========================================= */}
+
+      {isReady && (
+        <div
+          className="
+            animate-[heroReveal_1.2s_ease-out_forwards]
+          "
+        >
+          <Navbar />
+
+          <Hero />
+
+          <ServiceSummary />
+
+          <Services />
+
+          <About />
+
+          <Skills />
+
+          <Works />
+
+          <ContactSummary />
+
+          <Contact />
+        </div>
+      )}
 
     </ReactLenis>
   )
 }
 
 export default App
+

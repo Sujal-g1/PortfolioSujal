@@ -69,7 +69,7 @@ const Loader = ({ onComplete }) => {
   }}
 >
   <div
-    transition-style="in:wipe:up"
+   transition-style="in:center:horizontal"
     className="font-black uppercase whitespace-nowrap"
     style={{
       fontSize: 'clamp(120px, 25vw, 420px)',
